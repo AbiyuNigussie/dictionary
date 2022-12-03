@@ -16,27 +16,21 @@ html {
   height: 100%;
   background-color: #0d1117;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .search-wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border-radius: 5px;
   width: 50%;
 }
 
-.form-wrapper {
-  /* background-color: #f0f1f7; */
-  background-color: inherit;
+.search-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.search-bar {
   flex-grow: 2;
 }
 
@@ -61,4 +55,36 @@ html {
 
 .search-field::-webkit-search-cancel-button {
   display: none;
+}
+
+.ShownResults {
+  background-color: #161b22;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: black;
+  min-height: 200px;
+}
+
+.speaker-btn {
+  background-color: inherit;
+  border: none;
+}
+.speakerIcon {
+  color: white;
+}
+h2,
+h4 {
+  color: #b1c4d0;
+  margin: 5px 0;
+}
+p {
+  color: #6d8b8e;
+}
+
+@media screen and (max-width: 500px) {
+  .search-wrapper {
+    width: 90%;
+  }
 }
